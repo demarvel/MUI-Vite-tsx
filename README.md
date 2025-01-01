@@ -47,4 +47,15 @@ export default tseslint.config({
     ...react.configs['jsx-runtime'].rules,
   },
 })
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+// показать на смартфон
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    host: true,
+  }
+})
 ```
