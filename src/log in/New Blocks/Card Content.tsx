@@ -14,7 +14,7 @@ export default function BasicStack() {
       <BasicTextFields />
       <BasicTextFields />
       <CheckboxLabels></CheckboxLabels>
-      <LoginButtons></LoginButtons>
+      <LoginButtons>входи</LoginButtons>
       <Types></Types>
       <DividerVariants></DividerVariants>
       <BasicButtons></BasicButtons>

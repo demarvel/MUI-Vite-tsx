@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
-export default function LoginButtons() {
+export default function LoginButtons({ children }) {
   return (
     <Button
       variant="contained"
@@ -15,7 +15,7 @@ export default function LoginButtons() {
         my: 2,
       }}
     >
-      Вход
+      {children}
     </Button>
   );
 }

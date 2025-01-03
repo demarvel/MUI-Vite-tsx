@@ -1,10 +1,10 @@
-//import BasicTextFields from "../Components/Autocomplete";
+//import Logolong from "../Components/Logo/Logolong";
 import IconPositionTabs from "../Components/Tabs/Icon position";
-//import BoxBasic from "./New Blocks/Card Content";
 
 const App = () => {
   return (
     <>
+      {/* <Logolong></Logolong> */}
       <IconPositionTabs />
     </>
   );
