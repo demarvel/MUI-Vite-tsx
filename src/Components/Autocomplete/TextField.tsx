@@ -1,15 +1,15 @@
-//import * as React from 'react';
-
 import TextField from "@mui/material/TextField";
+import { ReactNode } from "react";
 
-export default function BasicTextFields() {
+export default function BasicTextFields({ text } : {text?: ReactNode} ) {
+
+  
   return (
     <>
       <TextField
         fullWidth
-        
         id="outlined-basic"
-        label="Email"
+        label={text}
         variant="outlined"
       />
     </>

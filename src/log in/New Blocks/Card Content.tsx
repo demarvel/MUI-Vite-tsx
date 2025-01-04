@@ -11,8 +11,8 @@ export default function BasicStack() {
   return (
     //<Box sx={{ width: "100%", my: 2,  maxWidth: '100%',p:2 }}>
     <Stack spacing={2} sx={{ p: 2, my: 2 }}>
-      <BasicTextFields />
-      <BasicTextFields />
+      <BasicTextFields text="Email" />
+      <BasicTextFields text="Пароль" />
       <CheckboxLabels></CheckboxLabels>
       <LoginButtons>входи</LoginButtons>
       <Types></Types>

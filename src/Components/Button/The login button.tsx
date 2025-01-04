@@ -1,7 +1,8 @@
 import Button from "@mui/material/Button";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import { ReactNode } from "react";
 
-export default function LoginButtons({ children }) {
+export default function LoginButtons({ children } : {children?: ReactNode} ) {
   return (
     <Button
       variant="contained"
