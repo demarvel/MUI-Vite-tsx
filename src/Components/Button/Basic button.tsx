@@ -15,7 +15,7 @@ export default function BasicButtons({
         borderRadius: 3,
       }}
       fullWidth={true}
-      color="info"
+      color="primary"
       variant={variant}
     >
       {children}

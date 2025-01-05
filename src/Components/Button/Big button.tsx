@@ -10,7 +10,7 @@ export default function LoginButtons({ children } : {children?: ReactNode}, ) {
       fullWidth={true}
       endIcon={<ChevronRightIcon />}
       sx={{
-        borderRadius: 3.5,
+        borderRadius: 15,
         height: "3.4rem",
         boxShadow: 7,
         top: 0,
