@@ -11,19 +11,14 @@ import FormDialog from "../../Components/Dialog/Dialog";
 
 export default function BasicStackLogin() {
   return (
-    //<Box sx={{ width: "100%", my: 2,  maxWidth: '100%',p:2 }}>
     <Stack spacing={2} sx={{ p: 2, my: 2 }}>
       <BasicTextFields text="Email" />
       <BasicTextFields text="Пароль" />
       <CheckboxLabels></CheckboxLabels>
       <LoginButtons>вход</LoginButtons>
-      {/* <AlertDialog></AlertDialog> */}
       <FormDialog></FormDialog>
-      {/* <BasicButtons variant="text">Забыли пароль?</BasicButtons> */}
-      {/* <Types></Types> */}
       <DividerVariants></DividerVariants>
       <BasicButtons variant="outlined">попробывать без регистрации</BasicButtons>
     </Stack>
-    //</Box>
   );
 }
