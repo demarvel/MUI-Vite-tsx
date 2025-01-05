@@ -4,8 +4,9 @@ import Divider from "@mui/material/Divider";
 
 const style = {
   py: 0,
+  top: 5,
   width: "100%",
-  maxWidth: 360,
+  //maxWidth: 360,
   //borderRadius: 2,
   //border: '1px solid',
   borderColor: "divider",

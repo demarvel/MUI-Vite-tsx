@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 const style = {
     py: 0,
     width: '100%',
-    maxWidth: 360,
+    //maxWidth: 360,
     //borderRadius: 2,
     //border: '1px solid',
     borderColor: 'divider',

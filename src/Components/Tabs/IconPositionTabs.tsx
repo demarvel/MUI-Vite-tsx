@@ -4,10 +4,11 @@ import Box from "@mui/material/Box";
 import { TabPanel, TabContext, TabList } from "@mui/lab";
 import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 import LoginIcon from "@mui/icons-material/Login";
-import BasicStack from "../../log in/New Blocks/Card Content";
+import BasicStackLogin from "../../log in/New Blocks/BasicStackLogin";
+import BasicStackSingin from "../../log in/New Blocks/BasicStackSingin";
 
 export default function LabTabs() {
-  const [value, setValue] = React.useState('1');
+  const [value, setValue] = React.useState("1");
 
   const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -38,10 +39,12 @@ export default function LabTabs() {
         </TabList>
       </Box>
       <TabPanel value="1">
-        <BasicStack />
+        <BasicStackLogin />
       </TabPanel>
-      // <TabPanel value="2">Iteffm Two</TabPanel>
+      <TabPanel value="2">
+        <BasicStackSingin />
+      </TabPanel>
     </TabContext>
     // </Box>
   );
-};
+}

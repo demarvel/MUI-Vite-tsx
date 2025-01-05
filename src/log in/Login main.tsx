@@ -1,10 +1,10 @@
-//import Logolong from "../Components/Logo/Logolong";
-import IconPositionTabs from "../Components/Tabs/Icon position";
+import Logolong from "../Components/Logo/Logolong";
+import IconPositionTabs from "../Components/Tabs/IconPositionTabs";
 
 const App = () => {
   return (
     <>
-      {/* <Logolong></Logolong> */}
+      <Logolong></Logolong>
       <IconPositionTabs />
     </>
   );
