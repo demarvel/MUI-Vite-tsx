@@ -9,7 +9,7 @@ export default function BasicStackSingin() {
     <Stack spacing={2} sx={{ p: 0, my: 1 }}>
       <BasicTextFields text="Email" />
       <BasicTextFields text="Пароль" />
-      <BasicTextFields text="телефон" />
+      <BasicTextFields text="Телефон" />
       <DividerVariants></DividerVariants>
       <LoginButtons>Зарегитрироватся</LoginButtons>
     </Stack>

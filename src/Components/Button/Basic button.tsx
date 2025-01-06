@@ -1,9 +1,13 @@
 import Button from "@mui/material/Button";
 import { ReactNode } from "react";
 
-
 export default function BasicButtons({
-  variant, children}: {  variant: ReactNode;  children: ReactNode;}) {
+  variant,
+  children,
+}: {
+  variant: ReactNode;
+  children: ReactNode;
+}) {
   return (
     <Button
       onClick={() => {
