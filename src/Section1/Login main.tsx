@@ -1,11 +1,13 @@
 import Logolong from "../Components/Logo/Logolong";
-import IconPositionTabs from "../Components/Tabs/IconPositionTabs";
+import TabsLab from "../Components/Tabs/TabsLab";
+//import MainPage from "../Section2/MainPage";
 
 const App = () => {
   return (
     <>
       <Logolong></Logolong>
-      <IconPositionTabs />
+      <TabsLab />
+      {/* <MainPage></MainPage> */}
     </>
   );
 };

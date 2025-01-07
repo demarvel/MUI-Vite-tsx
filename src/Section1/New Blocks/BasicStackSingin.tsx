@@ -1,7 +1,7 @@
 import Stack from "@mui/material/Stack";
 import BasicTextFields from "../../Components/Autocomplete/TextField";
-import LoginButtons from "../../Components/Button/Big button";
-import DividerVariants from "../../Components/Divider/BasicsDivider";
+import ButtonBig from "../../Components/Button/ButtonBig";
+import DividerVariants from "../../Components/Divider/DividerVariants";
 
 export default function BasicStackSingin() {
   return (
@@ -11,7 +11,7 @@ export default function BasicStackSingin() {
       <BasicTextFields text="Пароль" />
       <BasicTextFields text="Телефон" />
       <DividerVariants></DividerVariants>
-      <LoginButtons>Зарегитрироватся</LoginButtons>
+      <ButtonBig>Зарегитрироватся</ButtonBig>
     </Stack>
   );
 }

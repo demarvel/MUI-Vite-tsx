@@ -1,9 +1,9 @@
 import Stack from "@mui/material/Stack";
 import BasicTextFields from "../../Components/Autocomplete/TextField";
 import CheckboxLabels from "../../Components/Checkbox/FormControlLabel";
-import LoginButtons from "../../Components/Button/Big button";
-import DividerVariants from "../../Components/Divider/BasicsDivider";
-import BasicButtons from "../../Components/Button/Basic button";
+import ButtonBig from "../../Components/Button/ButtonBig";
+import DividerVariants from "../../Components/Divider/DividerVariants";
+import ButtonBasic from "../../Components/Button/ButtonBasic";
 import FormDialog from "../../Components/Dialog/Dialog";
 
 export default function BasicStackLogin() {
@@ -12,10 +12,10 @@ export default function BasicStackLogin() {
       <BasicTextFields text="Email" />
       <BasicTextFields text="Пароль" />
       <CheckboxLabels></CheckboxLabels>
-      <LoginButtons>вход</LoginButtons>
+      <ButtonBig >вход</ButtonBig>
       <FormDialog></FormDialog>
       <DividerVariants></DividerVariants>
-      <BasicButtons variant="outlined">вход без регистрации</BasicButtons>
+      <ButtonBasic variant="outlined">вход без регистрации</ButtonBasic>
     </Stack>
   );
 }
