@@ -52,8 +52,8 @@ export default function FormDialog() {
         <DialogTitle>Сброс пароля</DialogTitle>
         <DialogContent>
           <DialogContentText>
-          На указанный адрес будет отправлено сообщение для восстановления
-          пароля.
+          На почту будет отправлен код для восстановления
+          пароля
           </DialogContentText>
           <TextField
             autoFocus

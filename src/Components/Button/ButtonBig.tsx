@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { ReactNode } from "react";
 
-export default function ButtonBig({ children }: { children?: ReactNode }) {
+export default function ButtonBig({ label }: { label?: ReactNode }) {
   return (
     <Button
       variant="contained"
@@ -16,7 +16,7 @@ export default function ButtonBig({ children }: { children?: ReactNode }) {
         top: 0,
       }}
     >
-      {children}
+      {label}
     </Button>
   );
 }

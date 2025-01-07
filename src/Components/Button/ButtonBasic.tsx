@@ -4,6 +4,7 @@ import { PropsWithChildren } from "react";
 
 interface Props {
   variant?: "text" | "outlined" | "contained";
+  label?: React.ReactNode;
   onClick?: () => void;
 }
 
@@ -23,7 +24,7 @@ export default function ButtonBasic(props: PropsWithChildren<Props>) {
       color="primary"
       variant={props.variant}
     >
-      {props.children}
+      {props.label}
     </Button>
   );
 }

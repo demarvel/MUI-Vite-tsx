@@ -1,7 +1,7 @@
 import TextField from "@mui/material/TextField";
 import { ReactNode } from "react";
 
-export default function BasicTextFields({ text } : {text?: ReactNode} ) {
+export default function TextFields({ label } : {label?: ReactNode} ) {
 
   
   return (
@@ -9,7 +9,7 @@ export default function BasicTextFields({ text } : {text?: ReactNode} ) {
       <TextField
         fullWidth
         id="outlined-basic"
-        label={text}
+        label={label}
         variant="outlined"
       />
     </>
