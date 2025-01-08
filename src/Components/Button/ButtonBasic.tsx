@@ -13,7 +13,7 @@ export default function ButtonBasic(props: PropsWithChildren<Props>) {
   return (
     <Button
       onClick={() => {
-        alert("Test");
+        //alert("Test");
         if (props.onClick) props.onClick();
       }}
       size="large"

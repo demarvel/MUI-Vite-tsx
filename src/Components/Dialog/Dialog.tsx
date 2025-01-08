@@ -6,6 +6,8 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import ButtonBasic from "../Button/ButtonBasic";
+
 
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
@@ -20,19 +22,13 @@ export default function FormDialog() {
 
   return (
     <React.Fragment>
-      <Button
-        size="large"
-        sx={{
-          boxShadow: "none",
-          borderRadius: 3,
-        }}
-        fullWidth={true}
+      <ButtonBasic
         color="info"
         variant="text"
         onClick={handleClickOpen}
       >
         Забыли пароль?
-      </Button>
+      </ButtonBasic>
       <Dialog
         open={open}
         onClose={handleClose}

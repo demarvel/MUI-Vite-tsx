@@ -1,10 +1,18 @@
 import Button from "@mui/material/Button";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
-export default function ButtonBig({ label }: { label?: ReactNode }) {
+interface Props {
+  label?: React.ReactNode;
+  onClick?: () => void;
+}
+
+export default function ButtonBig(props: PropsWithChildren<Props>) {
   return (
     <Button
+      onClick={() => {
+        if (props.onClick) props.onClick();
+      }}
       variant="contained"
       size="large"
       fullWidth={true}
@@ -16,7 +24,7 @@ export default function ButtonBig({ label }: { label?: ReactNode }) {
         top: 0,
       }}
     >
-      {label}
+      {props.label}
     </Button>
   );
 }

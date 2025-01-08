@@ -5,9 +5,8 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-//import DeleteIcon from "@mui/icons-material/Delete";
-import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import DrawerFilter from "../Drawer/DrawerFilter";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -16,7 +15,7 @@ const Search = styled("div")(({ theme }) => ({
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
-          
+
   marginLeft: 0,
   marginRight: 50,
   width: "100%",
@@ -55,58 +54,43 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function AppBarSearch() {
   return (
-      <AppBar
-        position="sticky"
-        sx={{
-          pb:1,
-          pt:1,
-          boxShadow: 0,
-          borderRadius: "50px",
-        }}
-      >
-        <Toolbar>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Поиск заказа..."
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            Resova
-          </Typography>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-          >
-            {/* <DeleteIcon />
-          </IconButton>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-          > */}
-            <FilterAltIcon />
-          </IconButton>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <AccountCircleIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
+    <AppBar
+      position="sticky"
+      sx={{
+        pb: 1,
+        pt: 1,
+        boxShadow: 0,
+        borderRadius: "50px",
+      }}
+    >
+      <Toolbar>
+        <Search>
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase
+            placeholder="Поиск заказа..."
+            inputProps={{ "aria-label": "search" }}
+          />
+        </Search>
+        <Typography
+          variant="h6"
+          noWrap
+          component="div"
+          sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+        >
+          Resova
+        </Typography>
+        <DrawerFilter/>
+        <IconButton
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="open drawer"
+        >
+          <AccountCircleIcon />
+        </IconButton>
+      </Toolbar>
+    </AppBar>
   );
 }
