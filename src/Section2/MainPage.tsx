@@ -12,7 +12,7 @@ const MainPage = () => {
       <Box sx={{ width: "100%", mt: 2, ml:2 }}>
         <TextCaption label="Заказы" />
       </Box>
-      <Stack spacing={2} sx={{ width: "100%", mt: 2,  }}>
+      <Stack spacing={1} sx={{ width: "100%", mt: 0,  }}>
       <AccordionMainPage/>
       <AccordionMainPage/>
       </Stack>

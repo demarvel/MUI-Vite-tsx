@@ -1,12 +1,11 @@
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
-//import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import DeleteIcon from "@mui/icons-material/Delete";
+//import DeleteIcon from "@mui/icons-material/Delete";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
@@ -17,7 +16,9 @@ const Search = styled("div")(({ theme }) => ({
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
+          
   marginLeft: 0,
+  marginRight: 50,
   width: "100%",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(0),
@@ -54,14 +55,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function AppBarSearch() {
   return (
-    // <Box sx={{ flexGrow: 1, mr: 1 }} position="fixed">
       <AppBar
         position="sticky"
         sx={{
-          flexGrow: 1,
+          pb:1,
+          pt:1,
           boxShadow: 0,
-          bgcolor: "info.main",
-          borderRadius: "30px",
+          borderRadius: "50px",
         }}
       >
         <Toolbar>
@@ -87,17 +87,15 @@ export default function AppBarSearch() {
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            // sx={{ mr: 2 }}
           >
-            <DeleteIcon />
+            {/* <DeleteIcon />
           </IconButton>
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            // sx={{ mr: 2 }}
-          >
+          > */}
             <FilterAltIcon />
           </IconButton>
           <IconButton
@@ -105,12 +103,10 @@ export default function AppBarSearch() {
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            // sx={{ mr: 2 }}
           >
             <AccountCircleIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
-    // </Box>
   );
 }

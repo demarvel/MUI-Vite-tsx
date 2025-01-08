@@ -5,6 +5,7 @@ import { PropsWithChildren } from "react";
 interface Props {
   variant?: "text" | "outlined" | "contained";
   label?: React.ReactNode;
+  color?: "inherit" | "primary" | "secondary" | "success" | "error" | "info" | "warning"
   onClick?: () => void;
 }
 
@@ -21,7 +22,7 @@ export default function ButtonBasic(props: PropsWithChildren<Props>) {
         borderRadius: 3,
       }}
       fullWidth={true}
-      color="primary"
+      color={props.color}
       variant={props.variant}
     >
       {props.label}

@@ -1,5 +1,4 @@
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import Divider from "@mui/material/Divider";
 
 const style = {
@@ -18,7 +17,6 @@ export default function DividerVariants() {
   return (
     <List sx={style}>
       <Divider component="li" />
-      <ListItem></ListItem>
     </List>
   );
 }
