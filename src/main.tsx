@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
-import App from "./Section1/MainLogin";
+import MainPage from "./Section2/MainPage";
 
 createRoot(document.getElementById("root")!).render(
   //<>
 
-  <App />
+  <MainPage />
 
   //</>
 );
