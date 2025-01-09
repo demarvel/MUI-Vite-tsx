@@ -58,4 +58,36 @@ export default defineConfig({
     host: true,
   }
 })
+
+//необходимые библитеки MUI для Data
+//npm
+npm install @mui/x-date-pickers
+npm install dayjs
+npm install @mui/material @emotion/react @emotion/styled
+//yarn
+yarn add @mui/x-date-pickers
+yarn add dayjs
+yarn add @mui/material @emotion/react @emotion/styled
+
+//необходимые библитеки MUI
+//npm
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @fontsource/roboto
+npm install @mui/icons-material
+npm install @mui/system @emotion/react @emotion/styled
+npm install @mui/system @mui/styled-engine-sc styled-components
+
+//yarn
+yarn add @mui/material @emotion/react @emotion/styled
+yarn add @mui/material @mui/styled-engine-sc styled-components
+yarn add @fontsource/roboto
+yarn add @mui/icons-material
+yarn add @mui/system @emotion/react @emotion/styled
+yarn add @mui/system @mui/styled-engine-sc styled-components
+
+//снять ограничения с ком.строки
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+
+
 ```

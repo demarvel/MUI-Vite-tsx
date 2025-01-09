@@ -57,8 +57,8 @@ export default function AppBarSearch() {
     <AppBar
       position="sticky"
       sx={{
-        pb: 1,
-        pt: 1,
+        //pb: 1,
+        //pt: 1,
         boxShadow: 0,
         borderRadius: "50px",
       }}

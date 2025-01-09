@@ -35,7 +35,9 @@ export default function AccordionMainPage(props: PropsWithChildren<Props>) {
           </Avatar>
           <Typography sx={{ mt: 1, ml: 2 }}>Заказ: {props.labelOrder}</Typography>
         </AccordionSummary>
+        
         <AccordionDetails
+        //Основной компонент
           sx={{
             boxShadow: 6,
             bgcolor: blue[100],
@@ -51,7 +53,7 @@ export default function AccordionMainPage(props: PropsWithChildren<Props>) {
               mt: 1,
               pt: 0.5,
               pb: 1.5,
-              borderRadius: 2,
+              borderRadius: 4,
             }}
           >
             <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
@@ -64,7 +66,7 @@ export default function AccordionMainPage(props: PropsWithChildren<Props>) {
               mt: 1,
               pt: 0.5,
               pb: 1.5,
-              borderRadius: 2,
+              borderRadius: 4,
             }}
           >
             <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
@@ -78,7 +80,7 @@ export default function AccordionMainPage(props: PropsWithChildren<Props>) {
               mb: 1,
               pt: 0.5,
               pb: 1.5,
-              borderRadius: 2,
+              borderRadius: 4,
             }}
           >
             <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
