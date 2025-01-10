@@ -6,6 +6,9 @@ interface Props {
   variant?: "text" | "outlined" | "contained";
   label?: React.ReactNode;
   color?: "inherit" | "primary" | "secondary" | "success" | "error" | "info" | "warning"
+  startIcon?: React.ReactNode;
+  endIcon?: React.ReactNode;
+  fullWidth?: boolean | undefined
   onClick?: () => void;
 }
 
@@ -21,9 +24,11 @@ export default function ButtonBasic(props: PropsWithChildren<Props>) {
         boxShadow: "none",
         borderRadius: 3,
       }}
-      fullWidth={true}
+      fullWidth={props.fullWidth}
       color={props.color}
       variant={props.variant}
+      startIcon={props.startIcon}
+      endIcon={props.startIcon}
     >
       {props.label}
     </Button>

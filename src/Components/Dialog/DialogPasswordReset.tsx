@@ -9,7 +9,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import ButtonBasic from "../Button/ButtonBasic";
 
 
-export default function FormDialog() {
+export default function DialogPasswordReset() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {

@@ -1,12 +1,11 @@
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import DrawerFilter from "../Drawer/DrawerFilter";
+import DialogFiltr from "../Dialog/DialogFiltr";
+import DialogAccount from "../Dialog/DialogAccount";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -61,6 +60,8 @@ export default function AppBarSearch() {
         //pt: 1,
         boxShadow: 0,
         borderRadius: "50px",
+        //color: "black",
+        //bgcolor: "white",
       }}
     >
       <Toolbar>
@@ -81,15 +82,9 @@ export default function AppBarSearch() {
         >
           Resova
         </Typography>
-        <DrawerFilter/>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="open drawer"
-        >
-          <AccountCircleIcon />
-        </IconButton>
+
+        <DialogFiltr />
+        <DialogAccount />
       </Toolbar>
     </AppBar>
   );

@@ -12,6 +12,11 @@ export default function MainPage() {
       <Box sx={{ width: "100%", mt: 2, ml: 2 }}>
         <TextCaption label="Заказы" />
       </Box>
+
+      {
+      /* тестовый стек */
+      }
+
       <Stack spacing={1} sx={{ width: "100%", mt: 0 }}>
         <AccordionMainPage
           labelOrder="96849947"
