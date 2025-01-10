@@ -26,6 +26,7 @@ export default function DialogDelite() {
         label="удалить"
         variant="outlined"
         onClick={handleClickOpen}
+        fullWidth={true}
       />
       <Dialog
         open={open}

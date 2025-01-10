@@ -1,12 +1,14 @@
 
 import AccordionMainOrder from "../Components/Accordion/AccordionMainOrder";
-import AppBarButtons from "../Components/AppBar/AppBarButtons";
+import AppBarMainOrder from "../Components/AppBar/AppBarMainOrder";
+import ButtonFAB from "../Components/Button/ButtonFAB";
 
 const MainOrder = () => {
   return (
     <>
-    <AppBarButtons/>
+    <AppBarMainOrder/>
     <AccordionMainOrder/>
+    <ButtonFAB/>
     </>
   );
 };

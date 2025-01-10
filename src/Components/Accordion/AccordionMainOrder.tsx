@@ -3,8 +3,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Avatar, Box, Stack } from "@mui/material";
-import FolderIcon from "@mui/icons-material/Folder";
+import { Box, Stack } from "@mui/material";
 import { blue } from "@mui/material/colors";
 import ButtonBasic from "../Button/ButtonBasic";
 import { PropsWithChildren } from "react";
@@ -23,6 +22,7 @@ export default function AccordionMainOrder(props: PropsWithChildren<Props>) {
       <Accordion
         sx={{
           boxShadow: "none",
+          pt: 1,
         }}
       >
         <AccordionSummary
@@ -30,20 +30,31 @@ export default function AccordionMainOrder(props: PropsWithChildren<Props>) {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Avatar sx={{ bgcolor: blue[100] }}>
+          <Box>
+            <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
+              Итого:12 560p. {props.labelStatus}
+            </Typography>
+          </Box>
+
+          {/* <Avatar sx={{ bgcolor: blue[100] }}>
             <FolderIcon color="primary" />
-          </Avatar>
-          <Typography sx={{ mt: 1, ml: 2 }}>Заказ: {props.labelOrder}</Typography>
+            </Avatar> */}
+          <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
+            Данные заказа: {props.labelOrder}
+          </Typography>
         </AccordionSummary>
-        
+
         <AccordionDetails
-        //Основной компонент
+          //Основной компонент
           sx={{
-            boxShadow: 6,
-            bgcolor: blue[100],
+            boxShadow: 0,
+            //bgcolor: blue[100],
+            border: 1,
+            borderColor: "grey.500",
             mt: 1,
             mb: 1,
-            ml: 0,
+            ml: 1,
+            mr: 1,
             borderRadius: 5,
           }}
         >
@@ -57,7 +68,7 @@ export default function AccordionMainOrder(props: PropsWithChildren<Props>) {
             }}
           >
             <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
-              Статус: {props.labelStatus}
+              Адрес доставки: {props.labelStatus}
             </Typography>
           </Box>
           <Box
@@ -70,7 +81,7 @@ export default function AccordionMainOrder(props: PropsWithChildren<Props>) {
             }}
           >
             <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
-              Дата: {props.labelData}
+              Контакты: {props.labelData}
             </Typography>
           </Box>
           <Box
@@ -84,12 +95,58 @@ export default function AccordionMainOrder(props: PropsWithChildren<Props>) {
             }}
           >
             <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
-              Цена: {props.labelPrice}
+              Материал: {props.labelPrice}
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              bgcolor: blue[50],
+              mt: 1,
+              mb: 1,
+              pt: 0.5,
+              pb: 1.5,
+              borderRadius: 4,
+            }}
+          >
+            <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
+              Артикул: {props.labelPrice}
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              bgcolor: blue[50],
+              mt: 1,
+              mb: 1,
+              pt: 0.5,
+              pb: 1.5,
+              borderRadius: 4,
+            }}
+          >
+            <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
+              Дверные петли: {props.labelPrice}
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              bgcolor: blue[50],
+              mt: 1,
+              mb: 1,
+              pt: 0.5,
+              pb: 1.5,
+              borderRadius: 4,
+            }}
+          >
+            <Typography variant="subtitle2" sx={{ mt: 1, ml: 2 }}>
+              Стоимость за кв. метр: {props.labelPrice}
             </Typography>
           </Box>
           <Stack direction="row" spacing={2} sx={{ pt: 2 }}>
-            <DialogDelite/>
-            <ButtonBasic label="изменить" variant="contained" />
+            <DialogDelite />
+            <ButtonBasic
+              fullWidth={true}
+              label="Сохранить"
+              variant="contained"
+            />
           </Stack>
         </AccordionDetails>
       </Accordion>

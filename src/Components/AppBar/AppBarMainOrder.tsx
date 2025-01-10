@@ -8,7 +8,7 @@ import ButtonBasic from "../Button/ButtonBasic";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import SendIcon from '@mui/icons-material/Send';
 
-export default function ButtonAppBar() {
+export default function AppBarMainOrder() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -29,7 +29,7 @@ export default function ButtonAppBar() {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2, boxShadow: 0, border: 1, borderColor: 'grey.300' }}
+            sx={{ mr: 2, ml:0, boxShadow: 0, border: 1, borderColor: 'grey.300' }}
           >
             <ArrowBackIcon />
           </IconButton>
