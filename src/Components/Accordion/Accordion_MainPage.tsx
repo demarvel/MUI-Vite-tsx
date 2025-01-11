@@ -17,7 +17,8 @@ interface Props {
   labelPrice?: React.ReactNode;
 }
 
-export default function AccordionMainPage(props: PropsWithChildren<Props>) {
+
+export default function Accordion_MainPage(props: PropsWithChildren<Props>) {
   return (
     <div>
       <Accordion
@@ -39,12 +40,14 @@ export default function AccordionMainPage(props: PropsWithChildren<Props>) {
         <AccordionDetails
         //Основной компонент
           sx={{
-            boxShadow: 6,
-            bgcolor: blue[100],
+            //boxShadow: 6,
+            //bgcolor: blue[100],
             mt: 1,
             mb: 1,
             ml: 0,
-            borderRadius: 5,
+            borderBottom: 1,
+            borderColor: 'grey.400'
+            //borderRadius: 5,
           }}
         >
           <Box
@@ -88,10 +91,10 @@ export default function AccordionMainPage(props: PropsWithChildren<Props>) {
             </Typography>
           </Box>
           <Stack direction="row" spacing={2} sx={{ pt: 2 }}>
-            <DialogDelite/>
-            <ButtonBasic label="изменить" variant="contained" />
+            <DialogDelite  />
+            <ButtonBasic fullWidth={true} label="изменить" variant="contained" />
           </Stack>
-        </AccordionDetails>
+        </AccordionDetails >
       </Accordion>
     </div>
   );

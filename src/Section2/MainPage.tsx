@@ -1,9 +1,11 @@
 import { Box, Stack } from "@mui/system";
 import AppBarSearch from "../Components/AppBar/AppBarSearch";
 import TextCaption from "../Components/Typography/TextCaption";
-import AccordionMainPage from "../Components/Accordion/AccordionMainPage";
+import Accordion_MainPage from "../Components/Accordion/Accordion_MainPage";
+import ButtonFAB_MainPage from "../Components/Button/ButtonFAB_MainPage";
 
 export default function MainPage() {
+  
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -13,24 +15,17 @@ export default function MainPage() {
         <TextCaption label="Заказы" />
       </Box>
 
-      {
-      /* тестовый стек */
-      }
+      {/* тестовый стек */}
 
       <Stack spacing={1} sx={{ width: "100%", mt: 0 }}>
-        <AccordionMainPage
+        <Accordion_MainPage
           labelOrder="96849947"
           labelStatus="обрабатывается"
           labelData="19/01/2024"
           labelPrice="13 250 руб."
         />
-        <AccordionMainPage
-          labelOrder="56139947"
-          labelStatus="готов"
-          labelData="21/01/2024"
-          labelPrice="15 650 руб."
-        />
       </Stack>
+      <ButtonFAB_MainPage/>
     </>
   );
 }

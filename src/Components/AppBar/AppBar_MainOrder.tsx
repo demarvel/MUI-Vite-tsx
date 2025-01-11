@@ -6,9 +6,9 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import ButtonBasic from "../Button/ButtonBasic";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import SendIcon from '@mui/icons-material/Send';
+import SendIcon from "@mui/icons-material/Send";
 
-export default function AppBarMainOrder() {
+export default function AppBar_MainOrder() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -20,7 +20,6 @@ export default function AppBarMainOrder() {
           borderRadius: "50px",
           color: "black",
           bgcolor: "white",
-          
         }}
       >
         <Toolbar>
@@ -29,7 +28,13 @@ export default function AppBarMainOrder() {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2, ml:0, boxShadow: 0, border: 1, borderColor: 'grey.300' }}
+            sx={{
+              mr: 2,
+              ml: 0,
+              boxShadow: 0,
+              border: 1,
+              borderColor: "grey.300",
+            }}
           >
             <ArrowBackIcon />
           </IconButton>
@@ -42,11 +47,13 @@ export default function AppBarMainOrder() {
           <Button
             size="large"
             sx={{
-              boxShadow: 3,
+              boxShadow: 0,
               borderRadius: 3,
+              border: 1,
+              borderColor: "grey.300",
             }}
-            variant="contained"
-            color="primary"
+            variant="outlined"
+            color="info"
             endIcon={<SendIcon />}
           >
             Отправить

@@ -1,15 +1,19 @@
 import TextField from "@mui/material/TextField";
 import { ReactNode } from "react";
 
-export default function TextFields({ label } : {label?: ReactNode} ) {
+interface Props {
+  label?: ReactNode;
+}
 
-  
+
+export default function TextFields(props: React.PropsWithChildren<Props>) {
+
   return (
     <>
       <TextField
-        fullWidth
+        fullWidth={true}
         id="outlined-basic"
-        label={label}
+        label={props.label}
         variant="outlined"
       />
     </>

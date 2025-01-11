@@ -1,6 +1,5 @@
-import Button from "@mui/material/Button";
+import { Button } from "@mui/material";
 import { PropsWithChildren } from "react";
-
 
 interface Props {
   variant?: "text" | "outlined" | "contained";
@@ -12,23 +11,28 @@ interface Props {
   onClick?: () => void;
 }
 
-export default function ButtonBasic(props: PropsWithChildren<Props>) {
+export default function Button_Drawer(props: PropsWithChildren<Props>) {
   return (
     <Button
       onClick={() => {
-        //alert("Test");
         if (props.onClick) props.onClick();
       }}
       size="large"
       sx={{
-        boxShadow: "none",
-        borderRadius: 3,
+        fontSize: 12,
+        //boxShadow: 0,
+        borderRadius: 4,
+        pt: 1.5,
+        pb: 1.5,
+        minHeight: 70
+        
       }}
-      fullWidth={props.fullWidth}
-      color={props.color}
+      
+      fullWidth={true}
+      color="inherit"
       variant={props.variant}
       startIcon={props.startIcon}
-      endIcon={props.endIcon}
+      endIcon={props.startIcon}
     >
       {props.label}
     </Button>
