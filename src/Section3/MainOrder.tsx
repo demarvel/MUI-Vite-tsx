@@ -5,11 +5,13 @@ import Accordion_MainOrder2 from "../Components/Accordion/Accordion_MainOrder2";
 import AppBar_MainOrder from "../Components/AppBar/AppBar_MainOrder";
 import DividerVariants from "../Components/Divider/DividerVariants";
 import Drawer_MainOrder_Button from "../Components/Drawer/Drawer_MainOrder_Button";
+import SendIcon from "@mui/icons-material/Send";
+
 
 const MainOrder = () => {
   return (
     <>
-    <AppBar_MainOrder/>
+    <AppBar_MainOrder endIcon={<SendIcon/>} label="Отправить"/>
     <Accordion_MainOrder/>
     <DividerVariants/>
     

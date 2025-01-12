@@ -14,7 +14,7 @@ interface Props {
 }
 
 
-export default function AppBar_MainOrder(props: PropsWithChildren<Props>) {
+export default function AppBar_MainCircle(props: PropsWithChildren<Props>) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -55,7 +55,7 @@ export default function AppBar_MainOrder(props: PropsWithChildren<Props>) {
             sx={{
               boxShadow: 0,
               borderRadius: 3,
-              border: 1,
+              border: 0,
               borderColor: "grey.300",
             }}
             variant="outlined"
