@@ -10,8 +10,8 @@ createRoot(document.getElementById("root")!).render(
   
   <>
     {/* <MainLogin /> */}
-    {/* <MainPage /> -- Смотри Figma, там красивее.*/}
-    {/* <MainOrder/> -- Смотри Figma, там красивее.*/}
-    {/* <MainCircle/> */}
+    {/* <MainPage /> -- Смотри Figma, там красивее. */}
+    {/* <MainOrder/> -- Смотри Figma, там красивее. */}
+    {/* <MainCircle/> -- Смотри Figma, там красивее. */}
   </>
 );

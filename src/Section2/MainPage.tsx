@@ -4,6 +4,14 @@ import TextCaption from "../Components/Typography/TextCaption";
 import Accordion_MainPage from "../Components/Accordion/Accordion_MainPage";
 import ButtonFAB_MainPage from "../Components/Button/ButtonFAB_MainPage";
 
+
+
+
+
+
+
+
+
 export default function MainPage() {
   
   return (
@@ -11,6 +19,8 @@ export default function MainPage() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBarSearch />
       </Box>
+
+      
       <Box sx={{ width: "100%", mt: 2, ml: 2 }}>
         <TextCaption label="Заказы" />
       </Box>
