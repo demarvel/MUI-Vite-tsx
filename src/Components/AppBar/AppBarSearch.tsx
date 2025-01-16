@@ -84,6 +84,7 @@ export default function AppBarSearch() {
         </Typography>
 
         <DialogFiltr />
+        
         <DialogAccount />
       </Toolbar>
     </AppBar>

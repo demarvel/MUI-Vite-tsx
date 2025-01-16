@@ -1,7 +1,8 @@
 import { createRoot } from "react-dom/client";
+//import Portal from "./Components/Test/Portal";
 //import MainCircle from "./Section4/MainCircle";
 //import MainLogin from "./Section1/MainLogin";
-//import MainPage from "./Section2/MainPage";
+import MainPage from "./Section2/MainPage";
 //import MainOrder from "./Section3/MainOrder";
 
 createRoot(document.getElementById("root")!).render(
@@ -10,8 +11,9 @@ createRoot(document.getElementById("root")!).render(
   
   <>
     {/* <MainLogin /> */}
-    {/* <MainPage /> -- Смотри Figma, там красивее. */}
+    <MainPage /> -- Смотри Figma, там красивее.
     {/* <MainOrder/> -- Смотри Figma, там красивее. */}
     {/* <MainCircle/> -- Смотри Figma, там красивее. */}
+    {/* <Portal/> */}
   </>
 );
